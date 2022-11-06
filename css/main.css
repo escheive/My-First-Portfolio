@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -5,28 +6,24 @@
     font-family: 'Work Sans', sans-serif;
 }
 
-h1 {
-    font-size: calc(10px + 2vw);
-}
-#container {
+body {
     width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(rgba(156, 137, 237, 0.3),rgba(25, 22, 37, 0.3));
-    position: relative;
+    height: 140vh;
+    background-color:moccasin;
     padding: 0 5%;
-    align-items: center;
-    justify-content: center;
+    border: 2px solid red;
 }
 
 nav {
     width: 100%;
-    position: absolute;
     top: 0;
     left: 0;
     padding: 20px 4%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border: 2px solid black;
+    margin-bottom: 10%;
 }
 
 nav #logo {
@@ -38,40 +35,46 @@ nav #logo {
 nav ul li {
     list-style: none;
     display: inline-block;
-    margin-left: 40px;
+    margin-left: 20px;
 }
 
-nav ul li a {
-    color: #fff;
-    font-size: 30px;
+.navLink {
+    color: black;
+    font-size: calc(20px + 1vw);
 }
 
 a {
     text-decoration: none;
 }
 
-#backgroundVideo {
+/* #backgroundVideo {
     position: absolute;
     right: 0;
     bottom: 0;
     z-index: -1;
-}
+} */
 
-.container {
+#container {
+    border: 2px solid green;
     text-align: center;
 }
 
-.container a {
+#name {
     -webkit-text-stroke: 2px rgb(255, 255, 255);
     font-size: 120px;
     color: rgb(255, 255, 255);
     font-weight: 600;
+    border: 2px solid blue;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
-.container a:hover {
+#name:hover {
     -webkit-text-stroke: 2px rgb(64, 76, 101);
     color: rgb(64, 76, 101);
     font-weight: 700;
+    cursor: pointer;
 }
 
 @media (min-aspect-ratio: 16/9) {
@@ -85,21 +88,5 @@ a {
     #backgroundVideo{
         width: auto;
         height: 100%;
-    }
-}
-
-@media (max-width: 640px) {
-    #container {
-        width: 100%;
-        height: 100vh;
-        background-image: linear-gradient(rgba(156, 137, 237, 0.3),rgba(25, 22, 37, 0.3));
-        position: relative;
-        padding: 0 5%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    #home {
-        font-size: 50px;
     }
 }

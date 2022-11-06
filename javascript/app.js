@@ -1,5 +1,7 @@
 
 
+// CAROUSEL //
+// for carousel on about me page displaying programming languages
 
 // make our text array
 const textArray = document.getElementsByClassName('carouselText')
@@ -20,12 +22,10 @@ const prevBtn = document.querySelector('#prev')
 const hideOldContent = () => textArray[previousContentIndex].style.display = 'none'
 const showNewContent = () => textArray[currentContentIndex].style.display = 'inline'
 
-
 // function for rotating to the next text in carousel
 const carouselNext = () => {
     // see next image, old img disappears, new img appears
     currentContentIndex += 1;
-    console.log(currentContentIndex)
     // reset array when we reach end
     if(currentContentIndex > lastIndex) {
         currentContentIndex = firstIndex
@@ -60,9 +60,41 @@ const load = () => {
 
 }
 
-// event listeners
-nextBtn.addEventListener('click', carouselNext)
 
-prevBtn.addEventListener('click', carouselBack)
+
+// Dark Mode on index html
+
+// grab title text which will be button
+const darkModeTitle = document.getElementById('name')
+// keep track of which mode is toggled
+let theme = "light"
+
+// function for dark mode
+const darkMode = () => {
+    body = document.querySelector('body')
+    li = document.querySelectorAll('.navLink')
+    if(theme === "light"){
+        for(i=0; i < li.length; i++){
+            li[i].style.color="white";
+        }
+        body.style.background="black";
+        theme = "dark"
+    }else{
+        for(i=0; i < li.length; i++){
+            li[i].style.color="black";
+        }
+        body.style.background="moccasin";
+        theme = "light"
+    }
+}
+
+
+
+// event listeners
+// nextBtn.addEventListener('click', carouselNext)
+
+// prevBtn.addEventListener('click', carouselBack)
 
 window.addEventListener('load', load);
+
+darkModeTitle.addEventListener('click', darkMode)
