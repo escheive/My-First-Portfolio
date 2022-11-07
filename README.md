@@ -4,7 +4,7 @@
 
 ### Screenshot ###
 
-
+![Screen Shot 2022-11-06 at 6 28 46 PM](https://user-images.githubusercontent.com/115295094/200214427-48eb1c75-82ea-43ca-ad0b-48bff1ce8c73.png)
 
 
 ### Technologies Used ###
@@ -30,7 +30,9 @@
 
 ### Wireframes ###
 
-#my wireframe is in my images folder!
+![wireframe1](https://user-images.githubusercontent.com/115295094/200214380-929867b4-0159-407e-b2a0-e7ca84eaab0e.png)
+![wireframe2](https://user-images.githubusercontent.com/115295094/200214389-a5fa57a0-ddf7-4e70-80af-4f68ded1d6dc.png)
+![wireframe3](https://user-images.githubusercontent.com/115295094/200214396-508fdacf-f880-4e07-a881-c85212589cdf.png)
 
 
 
