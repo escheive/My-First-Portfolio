@@ -130,9 +130,13 @@ let theme = "light"
 const darkMode = () => {
     body = document.querySelector('body')
     li = document.querySelectorAll('.navLink')
+    footerLink = document.querySelectorAll('#footerLink')
     if(theme === "light"){
         for(i=0; i < li.length; i++){
             li[i].style.color="white";
+        }
+        for(i=0; i < footerLink.length; i++){
+            footerLink[i].style.color="white";
         }
         darkModeTitle.style['-webkit-text-stroke']="1px white";
         resume.style.color="white";
@@ -142,6 +146,9 @@ const darkMode = () => {
     }else{
         for(i=0; i < li.length; i++){
             li[i].style.color="black";
+        }
+        for(i=0; i < footerLink.length; i++){
+            footerLink[i].style.color="black";
         }
         darkModeTitle.style['-webkit-text-stroke']="1px black";
         resume.style.color="black";

@@ -7,11 +7,11 @@
 }
 
 body {
-    width: 100%;
-    height: 100%;
+    min-width: 100vw;
+    min-height: 100vh;
     background-color:moccasin;
     padding: 0 5%;
-    border: 2px solid red;
+    padding-bottom: 2.5rem;
 }
 
 nav {
@@ -22,8 +22,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 2px solid black;
-    margin-bottom: 15%;
+    margin-bottom: 12%;
 }
 
 nav #logo {
@@ -43,24 +42,22 @@ nav ul li {
     font-size: calc(20px + 1vw);
 }
 
+.navLink:hover {
+    opacity: 0.5;
+}
+
 iframe {
     margin: 0 auto;
     display: block;
+    max-width: 750px;
+    max-height: 600px;
 }
 
 a {
     text-decoration: none;
 }
 
-/* #backgroundVideo {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-} */
-
 #container {
-    border: 2px solid green;
     text-align: center;
 }
 
@@ -69,7 +66,6 @@ a {
     font-size: calc(40px + 6vw);
     color: black;
     font-weight: 800;
-    border: 2px solid blue;
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
@@ -80,6 +76,7 @@ a {
     color: rgb(64, 76, 101);
     font-weight: 700;
     cursor: pointer;
+    opacity: 0.5;
 }
 
 #resume {
@@ -90,6 +87,7 @@ a {
 
 #myResume:hover {
     cursor: pointer;
+    opacity: 0.5;
 }
 
 h3 {
@@ -141,16 +139,31 @@ h5 {
     cursor: pointer;
 }
 
-@media (min-aspect-ratio: 16/9) {
-    #backgroundVideo{
-        width: 100%;
-        height: auto;
-    }
+footer {
+    padding:40px 0;
+    color:#4b4c4d;
 }
-
-@media (max-aspect-ratio: 16/9) {
-    #backgroundVideo{
-        width: auto;
-        height: 100%;
-    }
+  
+.footerList {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
+}
+  
+.footerItem {
+    display: inline;
+    padding: 0 5vw;
+}
+  
+#footerLink {
+    color: black;
+    text-decoration:none;
+    opacity:0.8;
+}
+  
+#footerLink:hover {
+    opacity: 0.5;
 }
