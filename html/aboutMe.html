@@ -5,45 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Erik Scheive/About Me</title>
-    <script src="../javascript/app.js" defer></script>
+    <script src="../javascript/aboutMe.js" defer></script>
     <link rel="stylesheet" href="../css/aboutMe.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200&display=swap" rel="stylesheet">
 </head>
 <body>
-        <nav>
-            <a href="../index.html">
-                <img src="../media/20201101_171910.jpg" alt="Erik's Logo" id="logo">
-            </a>
-            <ul>
-                <li><a href="../html/projects.html">Projects</a></li>
-                <li><a href="https://www.instagram.com/escheive/?hl=en" target="_blank">Instagram</a></li>
-                <li><a href="https://www.linkedin.com/in/erikscheive" target="_blank">LinkedIn</a></li>
-            </ul>
-        </nav>
-        <div class="carousel">
-            <!-- previous button -->
-            <div id="prev">
-            </div>
-            <div class="carouselContent">
-                <p class="carouselText">JavaScript</p>
-                <p class="carouselText">HTML</p>
-                <p class="carouselText">CSS</p>
-                <p class="carouselText">Python</p>
-            </div>
-            <!-- next button -->
-            <div id="next">
-            </div>
+    <nav>
+        <a href="../index.html">
+            <img src="../media/20201101_171910.jpg" alt="Erik's Logo" id="logo">
+        </a>
+        <ul>
+            <li><a href="../html/projects.html">Projects</a></li>
+            <li><a href="https://www.instagram.com/escheive/?hl=en" target="_blank">Instagram</a></li>
+            <li><a href="https://www.linkedin.com/in/erikscheive" target="_blank">LinkedIn</a></li>
+        </ul>
+    </nav>
+    <div class="carousel">
+        <!-- previous button -->
+        <div id="prev">
         </div>
-        <div class="aboutMe">
-            <img src="../media/profilePhoto.jpg" alt="Image of me" class="profilePhoto">
-            <div class="aboutMeText">
-                <h2>A little about me</h2>
-                <p>Hi there! I was raised in Northern California and am currently residing in Seattle. I have a passion for problem-solving and my expertise is rooted in full-stack development. I formerly played professional basketball in Germany for a season. I love being active and traveling!</p>
-            </div>
+        <div class="carouselContent">
+            <p class="carouselText">JavaScript</p>
+            <p class="carouselText">HTML</p>
+            <p class="carouselText">CSS</p>
+            <p class="carouselText">Python</p>
         </div>
-         
+        <!-- next button -->
+        <div id="next">
+        </div>
+    </div>
+    <div class="aboutMe">
+        <img src="../media/profilePhoto.jpg" alt="Image of me" class="profilePhoto">
+        <div class="aboutMeText">
+            <h2>A little about me</h2>
+            <p>Hi there! I was raised in Northern California and am currently residing in Seattle. I have a passion for problem-solving and my expertise is rooted in full-stack development. I formerly played professional basketball in Germany for a season. I love being active and traveling!</p>
+        </div>
+    </div>
+    <div id="quiz">
+        <h2>How well do you know me?</h2>
+        <h5>Show Answers</h5>
+        <div class="questions">
+            <span id="q1">
+                <h3 class="revealAnswer">Favorite Food</h3>
+                <p class="answer">Steak</p>
+            </span>
+            <span id="q2">
+                <h3 class="revealAnswer">Favorite place I have lived</h3>
+                <p class="answer">Hawaii</p>
+            </span>
+            <span id="q3">
+                <h3 class="revealAnswer">How tall am I</h3>
+                <p class="answer">6'10</p>
+            </span>
+        <div>
+    </div>  
 </body>
 <footer>
     <ul class="footerList">

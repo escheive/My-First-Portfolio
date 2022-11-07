@@ -109,6 +109,35 @@ h2 {
     display: block;
 }
 
+#quiz {
+    margin-top: 5%;
+    text-align: center;
+}
+
+.questions {
+    margin-top: 2%;
+    margin-left: 15%;
+    text-align: left;
+}
+
+#q1, #q2, #q3 {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20%;
+}
+
+h5:hover {
+    cursor: pointer;
+}
+
+.answer {
+    display: none;
+}
+
+h3 {
+    padding: 1%;
+}
+
 footer {
     padding:40px 0;
     color:#4b4c4d;
