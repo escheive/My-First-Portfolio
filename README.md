@@ -11,6 +11,7 @@
 #HTML, CSS, JavaScript
 #Made using VSCode
 #Hosted using gitHub Pages
+#learned snippets of code from w3schools
 
 
 ### Installation ###

@@ -3,147 +3,52 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Work Sans', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
+    background-color: #FFFFFF;
     min-width: 100vw;
     min-height: 100vh;
-    background-color:moccasin;
-    padding: 0 5%;
     padding-bottom: 2.5rem;
 }
 
-nav {
-    width: 100%;
-    top: 0;
-    left: 0;
-    padding: 20px 4%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 12%;
+.nav {
+    background-color: rgba(0, 0, 0, 1);
+    color: white;
 }
 
-nav #logo {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-}
-
-nav ul li {
-    list-style: none;
-    display: inline-block;
-    margin-left: 20px;
-}
-
-.navLink {
+.text {
     color: black;
-    font-size: calc(20px + 1vw);
-}
-
-.navLink:hover {
-    opacity: 0.5;
 }
 
 iframe {
-    margin: 0 auto;
+    margin: auto;
     display: block;
     max-width: 750px;
     max-height: 600px;
 }
 
-a {
-    text-decoration: none;
-}
-
-#container {
-    text-align: center;
-}
-
-#name {
-    -webkit-text-stroke: 1px black;
-    font-size: calc(40px + 6vw);
-    color: black;
-    font-weight: 800;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-#name:hover {
-    -webkit-text-stroke: 2px rgb(64, 76, 101);
-    color: rgb(64, 76, 101);
-    font-weight: 700;
-    cursor: pointer;
-    opacity: 0.5;
-}
-
 #resume {
+    margin-top: 5%;
     text-align: center;
     font-size: calc(15px + 1vw);
     display: none;
 }
 
-#myResume:hover {
-    cursor: pointer;
-    opacity: 0.5;
-}
-
-h3 {
-    margin-top: 10%;
-    margin-bottom: 3vw;
-    font-size: calc(15px + 2vw);
-    text-align: center;
-}
-
-#education, #experience {
-    padding: 20px;
-}
-
-h5 {
+.show-answers-button {
     text-align: left;
     font-size: calc(10px + 2vh);
 }
 
-#chaminade {
-    display: flex;
-    justify-content: space-between;
-}
-
-#yuba {
-    display: flex;
-    justify-content: space-between;
-}
-
-#resumeTitle {
-    display: flex;
-    justify-content: space-between;
-}
-
-#resumeList {
-    font-size: calc(5px + 2vh);
-    text-align: left;
-    margin: 2% 0;
-}
-
-.educationSection {
-    display: none;
-}
-
-#education:hover {
-    cursor: pointer;
-}
-
-#experience:hover {
-    cursor: pointer;
+.show-answers-button:hover {
+    color: gray;
 }
 
 footer {
-    padding:40px 0;
-    color:#4b4c4d;
+    padding: 40px 0;
 }
-  
+
 .footerList {
     padding:0;
     list-style:none;
@@ -158,12 +63,106 @@ footer {
     padding: 0 5vw;
 }
   
-#footerLink {
-    color: black;
-    text-decoration:none;
-    opacity:0.8;
-}
-  
 #footerLink:hover {
     opacity: 0.5;
+}
+
+
+/* ++++++++++++++++++++ */
+/* About Me Section CSS */
+/* ++++++++++++++++++++ */
+
+
+#container {
+    width: 100%;
+    height: 140vh;
+    background-image: linear-gradient(rgba(156, 137, 237, 0.3),rgba(25, 22, 37, 0.3));
+    padding: 0 5%;
+}
+
+.about-me-quiz-title {
+    margin-bottom: 10px;
+}
+
+.aboutMe {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 8%;
+    font-size: calc(10px + 2vw);
+    padding: 0 5%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.aboutMeText {
+    width: 50vw;
+    margin-left: 2%;
+    max-width: 500px;
+}
+
+.profilePhoto {
+    align-items: left;
+    min-width: 300px;
+    width: 30vw;
+    margin-bottom: 5%;
+}
+
+.carousel {
+    width: 100%;
+    text-align: center;
+    margin-top: 7%;
+}
+
+.carouselColor, .carouselText {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 3em;
+    color: #000000;
+    opacity: 1;
+    /* text-shadow: 1px 1px #898989; */
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.carousel-button:active {
+    border: solid 8px #111;
+}
+
+.carouselText {
+    display: none;
+    font-size: calc(2em + 1vw);
+}
+.carouselText:first-of-type {
+    display: block;
+}
+
+#quiz {
+    margin-top: 10%;
+    text-align: center;
+}
+
+.questions {
+    margin-top: 2%;
+    margin-left: 15%;
+    text-align: left;
+}
+
+#q1, #q2, #q3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20%;
+}
+
+.answer {
+    display: none;
+    align-items: center;
+}
+
+.show-answers-button:hover {
+    cursor: pointer;
+}
+
+.projects-section {
+    margin-top: 10%;
 }

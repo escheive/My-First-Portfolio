@@ -1,104 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Erik Scheive</title>
-    <script src="javascript/app.js" defer></script>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200&display=swap" rel="stylesheet">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Erik Scheive</title>
+        <script src="javascript/app.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous" defer></script>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,700&family=Work+Sans:wght@200&display=swap" rel="stylesheet">
+    </head>
 
-    <nav>
-        <a href="index.html">
-            <img src="media/20201101_171910.jpg" alt="Erik's Logo" id="logo">
-        </a>
-        <ul>
-            <li><a href="html/aboutMe.html" class="navLink">About</a></li>
-            <li><a href="html/projects.html" class="navLink">Projects</a></li>
-            <li><a href="https://www.instagram.com/escheive/?hl=en" target="_blank" class="navLink">Instagram</a></li>
-            <li><a href="https://www.linkedin.com/in/erikscheive" target="_blank" class="navLink">LinkedIn</a></li>
-        </ul>
-    </nav>
-    <div id="container">
-        <h2 id="name">Erik Scheive</h2>
-    </div>
-    <h3 id="myResume">My Resume</h3>
-    <div id="resume">
-        <h4>Erik Scheive</h4>
-        <p>Seattle, WA 98105 | 530-460-8470 | scheiveerik@gmail.com</p>
-        <h4 id="education">Education</h4>
-            <div id="chaminade" class="educationSection">
-                <h5>Chaminade University</h5>
-                <p>Bachelor of Business Administration May 2019</p>
-            </div>
-            <div id="yuba" class="educationSection">
-                <h5>Yuba College</h5>
-                <p>Associate of Arts May 2017</p>
-            </div>
-        <h4 id="experience">Experience</h4>
-            <div id="generalAssembly">
-                <span id="resumeTitle">
-                    <h5>General Assembly</h5>
-                    <p>Seattle Oct 2022 - Jan 2023</p>
-                </span>
-                <ul id="resumeList">
-                    <li>Software Engineering Fellow receiving professional training and working on full-stack projects</li>
-                    <li>Created apps and websites using various programming languages like JavaScript and Python</li>
-                    <li>Collaborated with peers to create large-scale team projects on gitHub</li>
+
+    <body class="mb-5 pb-5">
+        <nav class="navbar navbar-dark navbar-expand-lg sticky-top nav">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white" href="#">Erik Scheive</a>
+                <ul class="nav justify-content-end mb-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#about-me-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white resumeToggle" href="#resumeLink">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="https://github.com/escheive" target="_blank">Github</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="https://www.linkedin.com/in/erikscheive" target="_blank">LinkedIn</a>
+                    </li>
                 </ul>
             </div>
-            <div id="tapco">
-                <span id="resumeTitle">
-                    <h5>Tapco Credit Union</h5>
-                    <p>Tacoma Mar 2022 - Oct 2022</p>
-                </span>
-                <ul id="resumeList">
-                    <li>Responsible for loan applications, new memberships, and branch performance</li>
-                    <li>Audit logs, internal processes, individual cash, security protocols, and robbery training on a routine basis</li>
-                    <li>Lead financial as well as professional development trainings for new and existing
-                        employees</li>
-                </ul>
+        </nav>
+
+
+        <div class="container">
+            <div>
+                <h1 class="text-center mt-5 pt-5 display-1">Erik Scheive</h1>
+                <h2 class="text-center">Software Engineer</h2>
+            </div>    
+            <div id="about-me-section" class="">
+                <div class="container mt-5 pt-5">
+                    <div class="row">
+                        <div class="col-sm">
+                            <img src="./media/profilePhoto.jpg" alt="Image of me" class="card-img-top">
+                        </div>
+                        <div class="col-sm">
+                            <h1 class="card-title display-4">A little about me</h1>
+                            <p class="card-text mt-2 fs-4">Hi there! I was born and raised in Northern California. Currently, I live in the Seattle area where I am pursuing a career in software engineering. I have a passion for problem-solving and my expertise is rooted in full-stack development. Prior, I played professional basketball for team Ehingen Urspring in Germany. I went to college at Chaminade University of Honolulu, where I received my Bachelor's in Business Administration. I love being active, photography, design, food, and travelling!</p>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div>
+                    <h2 class="text-center mt-5 pt-5">Check out this video I took!</h2>
+                    <iframe class="hiking-video mt-3" width=75% height=500px src="https://www.youtube.com/embed/q4nVkgZtS4g"title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>
+                </div>
+
+
+                <div class="carousel">
+                    <!-- previous button -->
+                    <div id="prev">
+                    </div>
+                    <a id="about-me-link"><h1 class="carouselColor">Find me on other platforms!</h1></a>
+                    <div class="carouselContent">
+                        <a href="https://www.linkedin.com/in/erikscheive" target="_blank" class="carouselText">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="blue" class="bi bi-linkedin" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/></svg>
+                        </a>
+                        <a href="https://github.com/escheive" target="_blank" class="carouselText">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+                        </a>
+                        <a href="https://www.instagram.com/escheive/?hl=en" target="_blank" class="carouselText">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="purple" class="bi bi-instagram" viewBox="0 0 16 16"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/></svg>
+                        </a>
+                        <a href="https://twitter.com/EScheive" target="_blank" class="carouselText">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="blue" class="bi bi-twitter" viewBox="0 0 16 16"><path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/></svg>
+                        </a>
+                        <a href="https://goswords.com/sports/mens-basketball/roster/erik-scheive/4465" target="_blank" class="carouselText">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="darkOrange" viewBox="0 0 512 512"><path d="M148.7 171.3L64.21 86.83c-28.39 32.16-48.9 71.38-58.3 114.8C19.41 205.4 33.34 208 48 208C86.34 208 121.1 193.9 148.7 171.3zM194.5 171.9L256 233.4l169.2-169.2C380 24.37 320.9 0 256 0C248.6 0 241.2 .4922 233.1 1.113C237.8 16.15 240 31.8 240 48C240 95.19 222.8 138.4 194.5 171.9zM208 48c0-14.66-2.623-28.59-6.334-42.09C158.2 15.31 118.1 35.82 86.83 64.21l84.48 84.48C193.9 121.1 208 86.34 208 48zM171.9 194.5C138.4 222.8 95.19 240 48 240c-16.2 0-31.85-2.236-46.89-6.031C.4922 241.2 0 248.6 0 256c0 64.93 24.37 124 64.21 169.2L233.4 256L171.9 194.5zM317.5 340.1L256 278.6l-169.2 169.2C131.1 487.6 191.1 512 256 512c7.438 0 14.75-.4922 22.03-1.113C274.2 495.8 272 480.2 272 464C272 416.8 289.2 373.6 317.5 340.1zM363.3 340.7l84.48 84.48c28.39-32.16 48.9-71.38 58.3-114.8C492.6 306.6 478.7 304 464 304C425.7 304 390.9 318.1 363.3 340.7zM447.8 86.83L278.6 256l61.52 61.52C373.6 289.2 416.8 272 464 272c16.2 0 31.85 2.236 46.89 6.031C511.5 270.8 512 263.4 512 256C512 191.1 487.6 131.1 447.8 86.83zM304 464c0 14.66 2.623 28.59 6.334 42.09c43.46-9.4 82.67-29.91 114.8-58.3l-84.48-84.48C318.1 390.9 304 425.7 304 464z"/></svg>
+                        </a>
+                    </div>
+                    <!-- next button -->
+                    <div id="next">
+                    </div>
+                </div>
+
+
+                <div class="container mt-5 pt-5 text-center">
+                    <div class="row">
+                        <h2 id="resumeLink">How well do you know me?</h2>
+                    </div>
+                    <div class="row">
+                        <h5 class="show-answers-button text-center">Show Answers</h5>
+                    </div>
+                    <div class="container mr-5">
+                        <div class="row">
+                            <span id="q1">
+                                <h3 class="revealAnswer">Favorite Food?</h3>
+                                <h3 class="answer">Steak</h3>
+                            </span>
+                        </div>
+                        <div class="row">
+                            <span id="q2">
+                                <h3 class="revealAnswer">Favorite place I have lived?</h3>
+                                <h3 class="answer">Hawaii</h3>
+                            </span>
+                        </div>
+                        <div class="row">
+                            <span id="q3">
+                                <h3 class="revealAnswer">How tall am I?</h3>
+                                <h3 class="answer">6'10"</h3>
+                            </span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div id="enterprise">
-                <span id="resumeTitle">
-                    <h5>Enterprise Rent-A-Car</h5>
-                    <p>Kent Feb 2021 - Mar 2022</p>
-                </span>
-                <ul id="resumeList">
-                    <li>Oversaw 300+ vehicles and coordinated reservations to maximize
-                        profit</li>
-                    <li>Underwrote and assessed potential risks to minimize theft, mitigate
-                        losses for derogatory payments, and prevent damage to vehicles</li>
-                    <li>Reviewed and analyzed income statements and developed growth plans for the branch</li>
-                </ul>
+
+
+            <div class="resume-section">
+                <div id="resume" class="text-center">
+                    <div class="row">
+                        <h1>Erik Scheive</h1>
+                    </div>
+                    <div class="row">
+                        <h5>Software Engineer</h5>
+                    </div>
+                    <div class="row">
+                        <h5>Seattle, WA 98105 | 530-460-8470 | scheiveerik@gmail.com | Github | LinkedIn</h5>
+                    </div>
+                    
+                    <div class="row pt-5">
+                        <h1>Projects</h1>
+                    </div>
+                    <div class="row mt-5">
+                        <h1>Facenook</h1>
+                    </div>
+                    <div class="row pb-2 mb-5 border-bottom border-secondary">
+                        <div class="col">
+                            <h4>Software Engineering Fellow | Seattle, WA | Oct 22 - Jan 23</h4>
+                        </div>
+                    </div>
+                    <div class="row my-2">
+                        <h3>Designed a fully functioning, scalable social media application that is user-focused</h3>
+                    </div>
+                    <div class="row my-2">
+                        <h3>Implemented a responsive, data-focused front-end using Django and Tailwind</h3>
+                    </div>
+                    <div class="row my-2">
+                        <h3>Integrated a reliable backend database using Postgres</h3>
+                    </div>
+                    <div class="row pt-5 mt-2">
+                        <h1>Hikers Hub</h1>
+                    </div>
+                    <div class="row pb-2 mb-5 border-bottom border-secondary">
+                        <div class="col">
+                            <h4>Github Manager | Database Manager | Front-end Programmer</h4>
+                        </div>
+                    </div>
+                    <div class="row my-2">
+                        <h3>Designed a fully functioning, scalable social media application that is user-focused</h3>
+                    </div>
+                    <div class="row my-2">
+                        <h3>Implemented a responsive, data-focused front-end using Django and Tailwind</h3>
+                    </div>
+                    <div class="row my-2">
+                        <h3>Integrated a reliable backend database using Postgres</h3>
+                    </div>
+                    
+                    <div class="row pt-5 mb-3 mt-2 border-bottom border-secondary">
+                        <h1>Languages & Skills</h1>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h4>Python</h4>
+                        </div>
+                        <div class="col">
+                            <h4>React</h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h4>JavaScript</h4>
+                        </div>
+                        <div class="col">
+                            <h4>Node.js</h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h4>SQL</h4>
+                        </div>
+                        <div class="col">
+                            <h4>Django</h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h4>MongoDB</h4>
+                        </div>
+                        <div class="col">
+                            <h4>Express</h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h4>Tailwind</h4>
+                        </div>
+                        <div class="col">
+                            <h4>SCSS</h4>
+                        </div>
+                    </div>
+                    
+                    <div class="row mt-5 py-5">
+                        <h1>Experience</h1>
+                    </div>
+                    <div class="row mt-5">
+                        <h1>General Assembly</h1>
+                    </div>
+                    <div class="row pb-2 mb-5 border-bottom border-secondary">
+                        <div class="col">
+                            <h4>Software Engineering Fellow | Seattle, WA | Oct 22 - Jan 23</h4>
+                        </div>
+                    </div>
+                    <div class="row my-2">
+                        <h3>Rec professional training and working on full-stack projects</h3>
+                    </div>
+                    <div class="row my-2">
+                        <h3>Designed and implemented interactive, working websites and integrated them with databases</h3>
+                    </div>
+                    
+                    <div class="row pt-2 mt-5">
+                        <h1>Tapco Credit Union</h1>
+                    </div>
+                    <div class="row mb-5 pb-2 border-bottom border-secondary">
+                        <div class="col">
+                            <h4>Assistant Manager | Tacoma, WA | Mar 22 - Oct 22</h4>
+                        </div>
+                    </div>
+                    <div class="row my-2">
+                        <h3>Create and execute plans to meet branch goals</h3>
+                    </div>
+                    <div class="row my-2">
+                        <h3>Lead financial as well as professional development trainings for new and existing employees</h3>
+                    </div>
+                    <div class="row my-2">
+                        <h3>Responsible for loan applications, new memberships, and branch performance</h3>
+                    </div>
+                    <div class="row my-2">
+                        <h3>Audit logs, internal processes, cash, security protocols, and robbery training on a routine basis</h3>
+                    </div>
+                    <div class="row my-2">
+                        <h3>Generate new memberships and visit local business to network and generate new leads</h3>
+                    </div>
+                    
+                    <div class="row pt-2 mt-5">
+                        <h1>Enterprise Holdings</h1>
+                    </div>
+                    <div class="row mb-5 pb-2 border-bottom border-secondary">
+                        <div class="col">
+                            <h4>Assistant Manager | Kent, WA | Mar 21 - Mar 22</h4>
+                        </div>
+                    </div>
+                    <div class="row my-2">
+                        <h3>Oversaw 300+ vehicles and coordinated reservations to maximize profit</h3>
+                    </div>
+                    <div class="row my-2">
+                        <h3>Led a diverse team, created schedules, trained employees, delegated tasks, and created monthly goals to achieve</h3>
+                    </div>
+                    <div class="row my-2">
+                        <h3>Underwrote and assessed potential risks to minimize theft, mitigate losses for derogatory payments, and prevent damage to vehicles</h3>
+                    </div>
+                    <div class="row my-2">
+                        <h3>Maintained relationships with body shops, dealerships and networked with potential clients</h3>
+                    </div>
+                    <div class="row my-2">
+                        <h3>Reviewed and analyzed income statements and developed growth plans for the branch</h3>
+                    </div>
+                    
+                    <div class="row pt-2 mt-5">
+                        <h1>Professional Basketball Player</h1>
+                    </div>
+                    <div class="row mb-5 pb-2 border-bottom border-secondary">
+                        <div class="col">
+                            <h4>Ehingen, Germany | Aug 2019 - Dec 20</h4>
+                        </div>
+                    </div>
+                    <div class="row my-2 pb-5">
+                        <h3>Played in a professional basketball league in Germany 2019-2020</h3>
+                    </div>
+                    
+                    <div class="row my-5 pt-5 border-bottom border-secondary">
+                        <h1>Education</h1>
+                    </div>
+                    <div class="row">
+                        <h1>Chaminade University</h1>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col">
+                            <h4>Bachelor of Business Admin | Honolulu, HI | May 2019</h4>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div id="basketball">
-                <span id="resumeTitle">
-                    <h5>Players Group Int.</h5>
-                    <p>Germany Aug 2019 - Dec 2020</p>
-                </span>
-                <ul id="resumeList">
-                    <li>Played in a professional basketball league in 2019-2020</li>
-                    <li>Collaborated in a team environment with coaches and fellow players</li>
-                    <li>Established a schedule to manage time between practices, games, and team events</li>
-                </ul>
-            </div>
-    </div>
-    <iframe width=75% height=500px src="https://www.youtube.com/embed/q4nVkgZtS4g"title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-    </iframe>  
-</body>
-<footer>
-    <ul class="footerList">
-        <li class="footerItem"><a href="#" id="footerLink">Home</a></li>
-        <li class="footerItem"><a href="html/aboutMe.html" id="footerLink">About</a></li>
-        <li class="footerItem"><a href="https://github.com/escheive" target="_blank" id="footerLink">gitHub</a></li>
-        <li class="footerItem"><a href="https://goswords.com/sports/mens-basketball/roster/erik-scheive/4465" target="_blank" id="footerLink">Basketball</a></li>
-        <li class="footerItem"><a href="https://www.linkedin.com/in/erikscheive" id="footerLink">LinkedIn</a></li>
-    </ul>
-</footer>
+        </div>
+
+
+    </body>
 </html>
