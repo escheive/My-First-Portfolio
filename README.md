@@ -2,9 +2,12 @@
 
 
 
-### Screenshot ###
+### Screenshots ###
+<img width="1417" alt="Screen Shot 2023-01-27 at 11 41 06 AM" src="https://user-images.githubusercontent.com/115295094/215182339-ab50fc54-a68c-48e2-b8ad-bcc21c4331cc.png">
+<img width="1415" alt="Screen Shot 2023-01-27 at 11 41 21 AM" src="https://user-images.githubusercontent.com/115295094/215182384-bc130c1f-6a0a-4820-90ec-ab76245e936f.png">
+<img width="1416" alt="Screen Shot 2023-01-27 at 11 41 41 AM" src="https://user-images.githubusercontent.com/115295094/215182465-198bdf38-84bd-4cad-902b-eef1073202ef.png">
 
-![Screen Shot 2022-11-06 at 6 28 46 PM](https://user-images.githubusercontent.com/115295094/200214427-48eb1c75-82ea-43ca-ad0b-48bff1ce8c73.png)
+
 
 
 ### Technologies Used ###
